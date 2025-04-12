@@ -14,7 +14,7 @@
 # Attend que Tailscale soit prêt
 			until ${pkgs.tailscale}/bin/tailscale status; do
 			sleep 1
-			done
+			done''
 
 	};
 	networking.firewall = {
