@@ -16,8 +16,6 @@
 			sleep 1
 			done
 
-# Se connecte (si pas déjà fait)
-			${pkgs.tailscale}/bin/tailscale up --authkey='';
 	};
 	networking.firewall = {
 		enable = true;
