@@ -17,7 +17,7 @@
 			done
 
 # Se connecte (si pas déjà fait)
-			${pkgs.tailscale}/bin/tailscale up --authkey=tskey-auth-keVXrhVVF411CNTRL-AT8VgZqrWe55gySYcQJoe5hUZmAVeZyG'';
+			${pkgs.tailscale}/bin/tailscale up --authkey='';
 	};
 	networking.firewall = {
 		enable = true;
