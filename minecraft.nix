@@ -9,13 +9,6 @@
 		wantedBy = [ "multi-user.target" ];
 
 		serviceConfig.Type = "oneshot";
-
-		script = ''
-# Attend que Tailscale soit prêt
-			until ${pkgs.tailscale}/bin/tailscale status; do
-			sleep 1
-			done''
-
 	};
 	networking.firewall = {
 		enable = true;
